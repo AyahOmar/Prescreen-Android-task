@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Walmart Task</string>
+    <string name="search_by_character">Search by Character...</string>
+</resources>

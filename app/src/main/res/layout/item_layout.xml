@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="5dp"
+    android:elevation="16dp"
+    app:cardCornerRadius="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/mImageViewCardViewItem"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mTextViewTitle" />
+
+        <TextView
+            android:id="@+id/mTextViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:text="@tools:sample/lorem" />
+
+        <TextView
+            android:id="@+id/synopsis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mTextViewTitle"
+            android:layout_toEndOf="@+id/mImageViewCardViewItem"
+            android:layout_toRightOf="@+id/mImageViewCardViewItem"
+            tools:text="@tools:sample/lorem" />
+
+        <TextView
+            android:id="@+id/episodes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/synopsis"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/mImageViewCardViewItem"
+            android:layout_toRightOf="@+id/mImageViewCardViewItem"
+            android:textColor="@color/black"
+            tools:text="@tools:sample/lorem" />
+
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/episodes"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/episodes"
+            android:layout_toRightOf="@+id/episodes"
+            android:textColor="@color/black"
+            tools:text="@tools:sample/lorem" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mImageViewCardViewItem"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_toStartOf="@+id/rated"
+            android:layout_toLeftOf="@+id/rated"
+            android:drawableLeft="@drawable/star"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            tools:text="@tools:sample/lorem" />
+
+        <TextView
+            android:id="@+id/rated"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_below="@+id/type"
+            android:layout_marginTop="9dp"
+            android:layout_toEndOf="@+id/mImageViewCardViewItem"
+            android:layout_toRightOf="@+id/mImageViewCardViewItem"
+            android:textColor="@color/black"
+            tools:text="@tools:sample/lorem" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
